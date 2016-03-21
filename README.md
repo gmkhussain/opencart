@@ -1,4 +1,4 @@
-#Configuration setting on sever
+#Configuration setting on server
 
 ## Open Config.php file
 
@@ -6,12 +6,12 @@
 <?php
 // HTTP
 define('HTTP_SERVER', 'http://ABCXYZ.com/public_html/');
-define('HTTP_IMAGE', 'http://ABCXYZ.com//public_html/image/');
-define('HTTP_ADMIN', 'http://ABCXYZ.com//public_html/admin/');
+define('HTTP_IMAGE', 'http://ABCXYZ.com/public_html/image/');
+define('HTTP_ADMIN', 'http://ABCXYZ.com/public_html/admin/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://ABCXYZ.com//public_html/');
-define('HTTPS_IMAGE', 'http://ABCXYZ.com//public_html/image/');
+define('HTTPS_SERVER', 'http://ABCXYZ.com/public_html/');
+define('HTTPS_IMAGE', 'http://ABCXYZ.com/public_html/image/');
 
 // DIR
 define('DIR_APPLICATION', '/home/XXXX/public_html/catalog/');
