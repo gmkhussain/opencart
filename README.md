@@ -43,4 +43,17 @@ define('DB_PREFIX', 'oc_');?>
 ##How to add a Information page link into navigation
 ```html
 <li><a class="<?php if ((isset($this->request->get['route']) && $this->request->get['route']=="information/information") && (isset($this->request->get['information_id']) && $this->request->get['information_id']=="13")) {echo "active";} ?>" href="index.php?route=information/information&information_id=4"><i class="icon-bug"></i>Test</a></li>
+
+
+
+
+##Featured products 'add to cart' not working
+Redirect “Add To Cart” to Product Detail page
+
+```html
+//remove code from featured
+<button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
+
+//simple link like insted of above code
+<a href="<?php echo $product['href']; ?>">View Detail</a>
 ```
