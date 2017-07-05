@@ -35,19 +35,22 @@ define('DB_PREFIX', 'oc_');?>
 ```
 
 
+## Common files header footer location in opencart
+```
+/public_html/catalog/view/theme/mobile/template/common
+```
 
 
 
 
-
-##How to add a Information page link into navigation
+## How to add a Information page link into navigation
 ```html
 <li><a class="<?php if ((isset($this->request->get['route']) && $this->request->get['route']=="information/information") && (isset($this->request->get['information_id']) && $this->request->get['information_id']=="13")) {echo "active";} ?>" href="index.php?route=information/information&information_id=4"><i class="icon-bug"></i>Test</a></li>
 
 
 
 
-##Featured products 'add to cart' not working
+## Featured products 'add to cart' not working
 Redirect “Add To Cart” to Product Detail page
 
 ```html
